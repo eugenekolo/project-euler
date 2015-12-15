@@ -34,7 +34,7 @@ def hexagonal_generator():
         yield h
         n += 1
 
-def tph():
+def solve():
     tg = triangle_generator()
     pg = pentagonal_generator()
     hg = hexagonal_generator()
@@ -47,9 +47,10 @@ def tph():
         else:
             count = 1
 
-        if count == 3:
-            print(n)
+        if count == 3 and n > 40755:
+            return n
 
         last_n = n
 
-tph()
+if __name__ == '__main__':
+    print(solve())

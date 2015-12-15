@@ -18,11 +18,9 @@ def solve():
     for baseCoin in coins:
         total = baseCoin
         i = 0
-        print ("baseCoin = " + str(baseCoin))
         while (total != 200 and i < 8):
             total += coins[i]
             i += 1
-            print(total)
 
 if __name__ == '__main__':
     print(solve())
