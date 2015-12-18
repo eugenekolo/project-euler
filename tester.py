@@ -41,13 +41,47 @@ class TestEuler(unittest.TestCase):
         finally:
             stdout.on() #[TODO] Evaluate if this is actually safe to do
 
-    #[Todo] Get this working with non-py scripts
+    #[Todo] Get this working with non-python scripts
     #def test_euler001(self):
     #    print("Testing euler001 == 233168 ... ",end="")
     #    self.assertEqual(int(subprocess.check_output(['perl', 'euler001.pl'])), 233168)
     #    print("passed\n")
+    def test_euler001(self):
+        pass
+    def test_euler002(self):
+        pass
+    def test_euler003(self):
+        pass
+    def test_euler004(self):
+        pass
+    def test_euler005(self):
+        pass
+    def test_euler006(self):
+        pass
+    def test_euler007(self):
+        pass
+    def test_euler008(self):
+        pass
+    def test_euler009(self):
+        pass
+    def test_euler010(self):
+        pass
+    def test_euler011(self):
+        pass
+    def test_euler012(self):
+        pass
+    def test_euler013(self):
+        pass
+    def test_euler014(self):
+        pass
     def test_euler015(self):
         self.run_test("euler015",137846528820)
+    def test_euler016(self):
+        pass
+    def test_euler017(self):
+        pass
+    def test_euler018(self):
+        pass
     def test_euler019(self):
         self.run_test("euler019",171)
     def test_euler020(self):
@@ -105,5 +139,4 @@ class TestEuler(unittest.TestCase):
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(TestEuler)
-    # verbosity = 0 to turn of .EF prints
     unittest.TextTestRunner(verbosity = 0).run(suite)
