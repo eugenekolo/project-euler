@@ -19,4 +19,3 @@ foreach my $num (3...999) {
     }
 }
 print "$sum\n";
-exit 42
