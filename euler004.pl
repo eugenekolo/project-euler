@@ -25,5 +25,5 @@ foreach my $firstNum (100..999) {
     }
 }
 
-print "Max palindrome = $max\n";
+print "$max\n";
 

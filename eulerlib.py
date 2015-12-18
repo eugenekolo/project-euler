@@ -8,6 +8,7 @@
 
 import math, sys, os
 from collections import defaultdict
+
 # Simple prime check for number n
 def isPrime(n):
     if n == 2 or n == 3: return True # 2 or 3
@@ -16,6 +17,7 @@ def isPrime(n):
         if n%i == 0: 
             return False
     return True
+
 # Sieve of Eratosthenes, finds prime #s up to n in O(nloglogn)
 def PrimeSieve(n):
     # Assume [0,n) are all primes
@@ -30,8 +32,6 @@ def PrimeSieve(n):
     return [i for i in range(2,n) if primes[i] is True]
 
 # Return the nth fibonacci number
-# [TODO] Could use some optimization
-# Starts at F_1 = 1
 def fib(n):
     counter = 2 # Start at fib(2) as F_1 = 1, F_2 = 1
     last, cur = 1,1
@@ -104,6 +104,12 @@ def factor(n):
 
     return d
 
+def num(s):
+    try:
+        return int(s)
+    except ValueError:
+        return float(s)
+
 #[TODO] Make this a singleton
 class stdoutToggle:
     actualstdout = sys.stdout
@@ -111,3 +117,6 @@ class stdoutToggle:
         sys.stdout = self.actualstdout
     def off(self):
         sys.stdout = open(os.devnull,'w')
+
+
+

@@ -20,4 +20,4 @@ foreach my $num (1..$limit) {
         $sum = $sum + $num;
     }
 }
-print "The sum = $sum\n";
+print "$sum\n";

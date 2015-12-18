@@ -2,7 +2,7 @@
 import unittest
 import time, sys, os
 from subprocess import check_output, CalledProcessError
-import eulerlib
+from eulerlib import num
 
 PATH = os.path.realpath(__file__)
 
@@ -24,7 +24,7 @@ class TestEuler(unittest.TestCase):
         self.testInfo['result'] = result
         try:
             self.testInfo['status'] = "FAILED"
-            self.assertEqual(int(check_output(["./" + name + " 2>/dev/null"], shell=True)), result)
+            self.assertEqual(num(check_output(["./" + name + " 2>/dev/null"], shell=True)), result)
             self.testInfo['status'] = "PASSED"
         except NameError:
             self.testInfo['status'] = "NOTFOUND"
@@ -38,38 +38,44 @@ class TestEuler(unittest.TestCase):
     def test_euler001(self):
         self.run_test("euler001.pl",233168)
     def test_euler002(self):
-        self.run_test("euler002.py",0)
+        self.run_test("euler002.pl",4613732)
     def test_euler003(self):
-        self.run_test("euler003.py",0)
+        self.run_test("euler003.pl",6857)
     def test_euler004(self):
-        self.run_test("euler004.py",0)
+        self.run_test("euler004.pl",906609)
     def test_euler005(self):
-        self.run_test("euler005.py",0)
+        self.run_test("euler005.pl",232792560)
     def test_euler006(self):
-        self.run_test("euler006.py",0)
+        self.run_test("euler006.pl",25164150)
     def test_euler007(self):
-        self.run_test("euler007.py",0)
+        self.run_test("euler007.pl",104743)
     def test_euler008(self):
-        self.run_test("euler008.py",0)
+        self.run_test("euler008.pl","BROKEN")
     def test_euler009(self):
-        self.run_test("euler009.py",0)
+        self.run_test("euler009.pl",31875000)
     def test_euler010(self):
-        self.run_test("euler010.py",0)
+        self.run_test("euler010.pl",142913828922)
     def test_euler011(self):
-        self.run_test("euler011.py",0)
+        self.run_test("euler011.py",70600674)
     def test_euler012(self):
-        pass
+        # TODO(eugenek): Make cpp ones work
+        self.run_test("euler012","BROKEN")
     def test_euler013(self):
-        pass
+        # TODO(eugenek): Make cpp ones work
+        self.run_test("euler013","BROKEN")
     def test_euler014(self):
-        pass
+        # TODO(eugenek): Make cpp ones work
+        self.run_test("euler014","BROKEN")
     def test_euler015(self):
         self.run_test("euler015.py",137846528820)
     def test_euler016(self):
-        pass
+        # TODO(eugenek): Make cpp ones work
+        self.run_test("euler016","BROKEN")
     def test_euler017(self):
-        pass
+        # TODO(eugenek): Make cpp ones work
+        self.run_test("euler017","BROKEN")
     def test_euler018(self):
+        self.run_test("euler018", "TODO")
         pass
     def test_euler019(self):
         self.run_test("euler019.py",171)

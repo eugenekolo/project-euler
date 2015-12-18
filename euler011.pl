@@ -69,5 +69,5 @@ foreach my $gIndex (0..scalar(@grid)-1) {
         }
     }
 }
-print "max = $max\n";
+print "$max\n";
 

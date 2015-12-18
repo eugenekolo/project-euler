@@ -21,9 +21,8 @@ foreach my $a (1..332) {
             next;
         }
         if ( ($a**2 + $b**2) == $c**2) { # Numbers have to follow a^2+b^2=c^2
-            print "$a + $b + $c = 1000\n";
-            print "$a^2 + $b^2 = $c^2\n";
-            print "$a*$b*$c = " . $a*$b*$c . "\n";
+            my $sum = $a*$b*$c;
+	    print "$sum\n";
         }
     }
 }

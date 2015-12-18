@@ -21,7 +21,7 @@ for (my $num = $stepsize; $num <= 1000000000; $num += $stepsize) {
         }
         # If the number passes every divisor check, then you found the #
         if ($divisor == 20) {
-            print "smallest number = $num\n";
+            print "$num\n";
             exit;
         }
     }

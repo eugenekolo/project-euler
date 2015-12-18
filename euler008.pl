@@ -24,4 +24,4 @@ foreach my $bigNumIndex (0..$length-1) {
         $max = $product;
     }
 }
-print "$maxdigs digits multiplied == $max\n";
+print "$max\n";

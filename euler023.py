@@ -36,4 +36,4 @@ def solve():
     return total
 
 if __name__ == '__main__':
-    solve()
+    print(solve())

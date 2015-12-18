@@ -1,11 +1,11 @@
 /*******************************************************************************
-// Euler 16
-// Power digit sum
-// Author: Eugene Kolo - 2014
-// Contact: www.eugenekolo.com
-
-// 215 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.
-// What is the sum of the digits of the number 21000?
+* Euler 16
+* Power digit sum
+* Author: Eugene Kolo - 2014
+* Contact: www.eugenekolo.com
+*
+* 215 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.
+* What is the sum of the digits of the number 21000?
 *******************************************************************************/
 
 #include <iostream>
@@ -26,6 +26,6 @@ int main() {
   for (int i = 0; i <= num.numberOfDigits()-1; i++) {
     sum = sum + num.digitAt(i);
   }
-  std::cout << "Sum of digits of 2^1000 = " << sum << std::endl;
+  std::cout << sum << std::endl;
   return 0;
 }

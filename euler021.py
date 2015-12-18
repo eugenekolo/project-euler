@@ -14,8 +14,9 @@
 # Evaluate the sum of all the amicable numbers under 10000.
 ################################################################################
 
+from eulerlib import sumDivisors
+
 def solve():
-    from eulerlib import sumDivisors
     total = 0
     for n in range(1,10000):
         # Definition of an amicable number
@@ -25,4 +26,4 @@ def solve():
     return total
 
 if __name__ == '__main__':
-    solve()
+    print(solve())

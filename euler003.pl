@@ -28,4 +28,4 @@ while ($multiple <= sqrt($num)) {
     $multiple++;
 }
 
-print "Largest prime factor = $maxPrime\n";
+print "$maxPrime\n";

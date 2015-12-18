@@ -22,7 +22,7 @@ while ($numOfPrimes != $nthPrime) {
         $numOfPrimes++;
     }
 }
-print "${nthPrime}th Prime = $number\n";
+print "$number\n";
 
 
 

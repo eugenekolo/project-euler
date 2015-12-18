@@ -23,5 +23,5 @@ foreach my $num (1..100) {
 }
 my $squareOfSOM = $sumOfNums**2;
 my $difference = $squareOfSOM - $sumOfSquares;
-print "Difference of Sums = $difference\n";
+print "$difference\n";
     
