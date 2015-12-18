@@ -17,7 +17,7 @@ class TestEuler(unittest.TestCase):
 
     def tearDown(self):
         self.testInfo['time'] = time.time() - self.startTime
-        print("{name:>12} == {result:>18} {status:>18} {time:>10.3f}s".format(**self.testInfo))
+        print("{name:>12}   {result:>18} {status:>18} {time:>10.3f}s".format(**self.testInfo))
     
     def run_test(self, name, result):
         self.testInfo['name'] = name
@@ -59,23 +59,23 @@ class TestEuler(unittest.TestCase):
         self.run_test("euler011.py",70600674)
     def test_euler012(self):
         # TODO(eugenek): Make cpp ones work
-        self.run_test("euler012","BROKEN")
+        self.run_test("euler012.xx","BROKEN")
     def test_euler013(self):
         # TODO(eugenek): Make cpp ones work
-        self.run_test("euler013","BROKEN")
+        self.run_test("euler013.xx","BROKEN")
     def test_euler014(self):
         # TODO(eugenek): Make cpp ones work
-        self.run_test("euler014","BROKEN")
+        self.run_test("euler014.xx","BROKEN")
     def test_euler015(self):
         self.run_test("euler015.py",137846528820)
     def test_euler016(self):
         # TODO(eugenek): Make cpp ones work
-        self.run_test("euler016","BROKEN")
+        self.run_test("euler016.xx","BROKEN")
     def test_euler017(self):
         # TODO(eugenek): Make cpp ones work
-        self.run_test("euler017","BROKEN")
+        self.run_test("euler017.xx","BROKEN")
     def test_euler018(self):
-        self.run_test("euler018", "TODO")
+        self.run_test("euler018.xx", "TODO")
         pass
     def test_euler019(self):
         self.run_test("euler019.py",171)
@@ -144,5 +144,9 @@ class TestEuler(unittest.TestCase):
         pass
 
 if __name__ == '__main__':
+    testHeader = {"name":"name", "result":"expected result", "status":"status", "time":"time"}
+    print("{name:>12}   {result:>18} {status:>18} {time:>10}".format(**testHeader))
+    testHeader = {"name":"----", "result":"---------------", "status":"------", "time":"----"}
+    print("{name:>12}   {result:>18} {status:>18} {time:>10}".format(**testHeader))
     suite = unittest.TestLoader().loadTestsFromTestCase(TestEuler)
     unittest.TextTestRunner(verbosity = 0).run(suite)
