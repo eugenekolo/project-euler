@@ -6,7 +6,7 @@ use strict;
 
 my $prevN = 1/2;
 
-my $test = &sumAtoB(2,85);
+my $test = &sumAtoB(2,80);
 print "$test\n";
 
 sub sumAtoB() {

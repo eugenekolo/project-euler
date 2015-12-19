@@ -50,33 +50,27 @@ class TestEuler(unittest.TestCase):
     def test_euler007(self):
         self.run_test("euler007.pl",104743)
     def test_euler008(self):
-        self.run_test("euler008.pl","BROKEN")
+        self.run_test("euler008.pl","WRONG_ANSWER") 
     def test_euler009(self):
         self.run_test("euler009.pl",31875000)
     def test_euler010(self):
         self.run_test("euler010.pl",142913828922)
     def test_euler011(self):
-        self.run_test("euler011.py",70600674)
+        self.run_test("euler011.pl",70600674)
     def test_euler012(self):
-        # TODO(eugenek): Make cpp ones work
-        self.run_test("euler012.xx","BROKEN")
+        self.run_test("euler012.xx","BROKEN") # TODO(eugenek): Make cpp ones work
     def test_euler013(self):
-        # TODO(eugenek): Make cpp ones work
-        self.run_test("euler013.xx","BROKEN")
+        self.run_test("euler013.xx","BROKEN") # TODO(eugenek): Make cpp ones work
     def test_euler014(self):
-        # TODO(eugenek): Make cpp ones work
-        self.run_test("euler014.xx","BROKEN")
+        self.run_test("euler014.xx","BROKEN") # TODO(eugenek): Make cpp ones work
     def test_euler015(self):
         self.run_test("euler015.py",137846528820)
     def test_euler016(self):
-        # TODO(eugenek): Make cpp ones work
-        self.run_test("euler016.xx","BROKEN")
+        self.run_test("euler016.xx","BROKEN") # TODO(eugenek): Make cpp ones work
     def test_euler017(self):
-        # TODO(eugenek): Make cpp ones work
-        self.run_test("euler017.xx","BROKEN")
+        self.run_test("euler017.xx","BROKEN") # TODO(eugenek): Make cpp ones work
     def test_euler018(self):
         self.run_test("euler018.xx", "TODO")
-        pass
     def test_euler019(self):
         self.run_test("euler019.py",171)
     def test_euler020(self):
@@ -101,13 +95,12 @@ class TestEuler(unittest.TestCase):
         self.run_test("euler029.py",9183) 
     def test_euler030(self):
         self.run_test("euler030.py",443839) 
-    # TODO(eugenek): Broken test ATM
-    #def test_euler031(self):
-    #    self.run_test("euler031.py",73682) 
+    def test_euler031(self):
+        self.run_test("euler031.py","BROKEN") 
     def test_euler032(self):
         self.run_test("euler032.py",45228) 
     def test_euler033(self):
-        self.run_test("euler033.py",100) 
+        self.run_test("euler033.py","TODO") 
     def test_euler034(self):
         self.run_test("euler034.py",40730) 
     def test_euler035(self):
@@ -127,21 +120,31 @@ class TestEuler(unittest.TestCase):
     def test_euler042(self):
         self.run_test("euler042.py",162) 
     def test_euler043(self):
-        self.run_test("euler043.py",16695334890) 
+        self.run_test("euler043.py","TODO") 
     def test_euler044(self):
-        self.run_test("euler044.py",5482660)
+        self.run_test("euler044.py","TODO")
     def test_euler045(self):
         self.run_test("euler045.py",1533776805)
     def test_euler046(self):
-        pass
+        self.run_test("euler046.py",5777)
     def test_euler047(self):
-        pass
+        self.run_test("euler047.py",134043)
     def test_euler048(self):
-        pass
+        self.run_test("euler048.py",9110846700)
     def test_euler049(self):
-        pass
+        self.run_test("euler049.py",296962999629)
     def test_euler050(self):
-        pass
+        self.run_test("euler050.py","WRONG_ANSWER")
+
+    ## These are out of order and random...
+    def test_euler100(self):
+        self.run_test("euler100.py","TODO")
+    def test_euler152(self):
+        self.run_test("euler152.pl","BROKEN")
+    def test_euler205(self):
+        self.run_test("euler205.py",0.5731441)
+    def test_euler206(self):
+        self.run_test("euler206.py",1389019170)
 
 if __name__ == '__main__':
     testHeader = {"name":"name", "result":"expected result", "status":"status", "time":"time"}

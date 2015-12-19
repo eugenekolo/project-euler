@@ -32,7 +32,8 @@ def solve():
         for j in range(2,3333,2):
             if not isPrime(i+j) or not isPrime(i+2*j): continue
             if ((str(i+j) in perms) and (str(i+2*j) in perms)):
-                print(str(i) + " " + str(i+j) + " " + str(i+2*j) + " Are permutations")
+                if i != 1487:
+                    return(str(i)+str(i+j)+str(i+2*j))
 
 if __name__ == '__main__':
     print(solve())

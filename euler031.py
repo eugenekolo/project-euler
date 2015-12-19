@@ -12,6 +12,8 @@
 #     1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p
 # How many different ways can £2 be made using any number of coins?
 ################################################################################
+
+# TODO(eugenek): Just implement this as a greedy algorithm
 def solve():
     coins = (200,100,50,20,10,5,2,1)
     total = 0
@@ -21,6 +23,7 @@ def solve():
         while (total != 200 and i < 8):
             total += coins[i]
             i += 1
+    return(i)
 
 if __name__ == '__main__':
     print(solve())

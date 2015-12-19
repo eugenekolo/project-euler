@@ -12,9 +12,10 @@
 # that 1/7 has a 6-digit recurring cycle.
 # Find the value of d < 1000 for which 1/d contains the longest recurring cycle in its decimal fraction part.
 ################################################################################
-def solve():
-    import eulerlib
 
+import eulerlib
+
+def solve():
     # The maximum period of cycle is O(10**ceil(log10(n))) (next10)
     # This makes this problem bruteforceable by just keeping a running history of the remainders from long division
     # The iterative function will cycle when it hits a previous long division remainder

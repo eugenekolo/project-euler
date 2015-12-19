@@ -17,7 +17,7 @@ def solve():
     maxNum = int(round(int(sqrt(1929394959697989990)),-1))
 
     # Search the range for a number whose square has the form
-    for num in xrange(maxNum, minNum, -10):
+    for num in range(maxNum, minNum, -10):
         square = str(num**2)
         if square[2] == '2' and square[4] == '3' and square[6] == '4' and square[8] == '5' and square[10] == '6' and square[12] == '7' and square[14] == '8' and square[16] == '9':
             return num
