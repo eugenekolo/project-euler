@@ -120,7 +120,6 @@ int main () {
     for (int i = 0; i <= sizeof(nums)/sizeof(InfInt) - 1; i++) {
         added = added + nums[i];
     }
-    std::cout << "First 10 digits: " << std::endl;
     for (int i = added.numberOfDigits()-1; i >= added.numberOfDigits()-10; i--) {
         std::cout << char(added.digitAt(i)+48);
     }

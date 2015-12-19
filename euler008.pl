@@ -17,8 +17,11 @@ my $maxdigs;
 
 # Create a bigNum string and substr into it to get individual digits, multiply and track the maximum found so far
 foreach my $bigNumIndex (0..$length-1) {
-    my $fiveDigits = substr($bigNum, $bigNumIndex, 5);
-    my $product = substr($fiveDigits, 0, 1) * substr($fiveDigits, 1, 1) * substr($fiveDigits, 2, 1) * substr($fiveDigits, 3, 1) * substr($fiveDigits, 4, 1);
+    my $thirteenDigits = substr($bigNum, $bigNumIndex, 13);
+    my $product = 1;
+    foreach $char (split //, $thirteenDigits) {
+    	$product *= $char;
+    }
     if ($product > $max) {
         $maxdigs = $fiveDigits;
         $max = $product;

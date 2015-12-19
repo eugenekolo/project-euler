@@ -36,6 +36,6 @@ int main () {
             maxNum = i;
         }
     }
-    std::cout << "maxNum = " << maxNum << " produces a max chain size of " << maxChainSize <<  std::endl;
+    std::cout  << maxNum <<  std::endl;
     return 0;
 }

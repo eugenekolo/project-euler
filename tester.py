@@ -50,7 +50,7 @@ class TestEuler(unittest.TestCase):
     def test_euler007(self):
         self.run_test("euler007.pl",104743)
     def test_euler008(self):
-        self.run_test("euler008.pl","WRONG_ANSWER") 
+        self.run_test("euler008.pl",23514624000) 
     def test_euler009(self):
         self.run_test("euler009.pl",31875000)
     def test_euler010(self):
@@ -58,17 +58,17 @@ class TestEuler(unittest.TestCase):
     def test_euler011(self):
         self.run_test("euler011.pl",70600674)
     def test_euler012(self):
-        self.run_test("euler012.xx","BROKEN") # TODO(eugenek): Make cpp ones work
+        self.run_test("euler012.elf",76576500)
     def test_euler013(self):
-        self.run_test("euler013.xx","BROKEN") # TODO(eugenek): Make cpp ones work
+        self.run_test("euler013.elf",5537376230)
     def test_euler014(self):
-        self.run_test("euler014.xx","BROKEN") # TODO(eugenek): Make cpp ones work
+        self.run_test("euler014.elf",837799)
     def test_euler015(self):
         self.run_test("euler015.py",137846528820)
     def test_euler016(self):
-        self.run_test("euler016.xx","BROKEN") # TODO(eugenek): Make cpp ones work
+        self.run_test("euler016.elf",1366)
     def test_euler017(self):
-        self.run_test("euler017.xx","BROKEN") # TODO(eugenek): Make cpp ones work
+        self.run_test("euler017.elf",21124)
     def test_euler018(self):
         self.run_test("euler018.xx", "TODO")
     def test_euler019(self):

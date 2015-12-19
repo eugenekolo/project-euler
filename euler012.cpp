@@ -26,7 +26,7 @@ int main () {
         numOfDivisors = numOfDivisors + 2; // Account for (1,triNum) divisor pair
         nth++;
     }
-    std::cout << "Trinum = " << triNum << std::endl;
+    std::cout << triNum << std::endl;
     return 0;
 }
     
